@@ -16,8 +16,8 @@ class Uls23(SegmentationAlgorithm):
     def __init__(self):
         self.image_metadata = None  # Keep track of the metadata of the input volume
         self.id = None  # Keep track of batched volume file name for export
-        self.z_size = 128  # Number of voxels in the z-dimension for each VOI
-        self.xy_size = 256  # Number of voxels in the xy-dimensions for each VOI
+        self.z_size = 64  # Number of voxels in the z-dimension for each VOI
+        self.xy_size = 128  # Number of voxels in the xy-dimensions for each VOI
         self.device = torch.device("cuda")
         self.predictor = None # nnUnet predictor
 
